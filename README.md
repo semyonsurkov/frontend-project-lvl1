@@ -7,3 +7,6 @@
 
 ## The Game: "Parity Check"  
 [![asciicast](https://asciinema.org/a/x8D0tobi4I2JMGuvc8W4LHqdO.svg)](https://asciinema.org/a/x8D0tobi4I2JMGuvc8W4LHqdO)
+
+## The Game: "Calculator"  
+[![asciicast](https://asciinema.org/a/G1xPzPBm4AKbckE10i4IpQhZB.svg)](https://asciinema.org/a/G1xPzPBm4AKbckE10i4IpQhZB)
