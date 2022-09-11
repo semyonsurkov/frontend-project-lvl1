@@ -11,6 +11,7 @@
 
    - Define an even number: `brain-even`.
    - Calculator: `brain-calc`.
+   - Greatest common divisor: `brain-gcd`.
 
 5. Enjoy the game
 
