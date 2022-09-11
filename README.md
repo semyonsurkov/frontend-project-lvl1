@@ -15,10 +15,13 @@
 5. Enjoy the game
 
 ## Set - up [Video] 
-[![asciicast](https://asciinema.org/a/517579.svg)](https://asciinema.org/a/517579)
+[![asciicast](https://asciinema.org/a/520196.svg)](https://asciinema.org/a/520196)
 
 ## The Game: "Parity Check"  
-[![asciicast](https://asciinema.org/a/x8D0tobi4I2JMGuvc8W4LHqdO.svg)](https://asciinema.org/a/x8D0tobi4I2JMGuvc8W4LHqdO)
+[![asciicast](https://asciinema.org/a/520197.svg)](https://asciinema.org/a/520197)
 
 ## The Game: "Calculator"  
-[![asciicast](https://asciinema.org/a/G1xPzPBm4AKbckE10i4IpQhZB.svg)](https://asciinema.org/a/G1xPzPBm4AKbckE10i4IpQhZB)
+[![asciicast](https://asciinema.org/a/520198.svg)](https://asciinema.org/a/520198)
+
+## The Game: "GCD - Greatest common divisor"
+[![asciicast](https://asciinema.org/a/520199.svg)](https://asciinema.org/a/520199)
