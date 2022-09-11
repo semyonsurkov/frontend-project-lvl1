@@ -1,3 +1,2 @@
 
-export const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-// поправить метод random 
+export const getRandomNumber = (min = 1, max = 10) => Math.floor(Math.random() * (max - min + 1) + min);
