@@ -19,7 +19,7 @@ const runProgression = () => {
   while (i !== 3) {
     const startValue = getRandomNumber(5, 10);
     const stepValue = getRandomNumber(1, 5);
-    const lengthValue = getRandomNumber(5, 10);
+    const lengthValue = getRandomNumber(6, 10);
 	 const progression = getProgression(startValue, stepValue, lengthValue);
 	 const indexOfHiddenElement = getRandomNumber(0, getProgression.length);
 	 const rightAnswer = progression[indexOfHiddenElement].toString();
