@@ -12,6 +12,7 @@
    - Define an even number: `brain-even`.
    - Calculator: `brain-calc`.
    - Greatest common divisor: `brain-gcd`.
+   - Progresion: `brain-progression`.
 
 5. Enjoy the game
 
