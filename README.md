@@ -12,6 +12,8 @@
    - Define an even number: `brain-even`.
    - Calculator: `brain-calc`.
    - Greatest common divisor: `brain-gcd`.
+   - Progresion: `brain-progression`.
+   - Is it prime: `brain-prime`.
 
 5. Enjoy the game
 
@@ -26,3 +28,9 @@
 
 ## The Game: "GCD - Greatest common divisor"
 [![asciicast](https://asciinema.org/a/520199.svg)](https://asciinema.org/a/520199)
+
+## The Game: "Progression"
+[![asciicast](https://asciinema.org/a/521352.svg)](https://asciinema.org/a/521352)
+
+## The Game: "Is it Prime"
+[![asciicast](https://asciinema.org/a/521353.svg)](https://asciinema.org/a/521353)
