@@ -26,3 +26,6 @@
 
 ## The Game: "GCD - Greatest common divisor"
 [![asciicast](https://asciinema.org/a/520199.svg)](https://asciinema.org/a/520199)
+
+## The Game: "Progression"
+[![asciicast](https://asciinema.org/a/521352.svg)](https://asciinema.org/a/521352)
