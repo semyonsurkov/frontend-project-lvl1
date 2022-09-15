@@ -18,11 +18,11 @@ const runProgression = () => {
   let i = 0;
   while (i !== 3) {
     const startValue = getRandomNumber(5, 10);
-    const stepValue = getRandomNumber(5, 10);
+    const stepValue = getRandomNumber(1, 5);
     const lengthValue = getRandomNumber(5, 10);
 	 const progression = getProgression(startValue, stepValue, lengthValue);
 	 const indexOfHiddenElement = getRandomNumber(0, getProgression.length);
-	 const rightAnswer = String(progression[indexOfHiddenElement]);
+	 const rightAnswer = progression[indexOfHiddenElement].toString();
 	 progression[indexOfHiddenElement] = '..';
 	 const question = progression.join(' ');
     tasks.push([question, rightAnswer]);
