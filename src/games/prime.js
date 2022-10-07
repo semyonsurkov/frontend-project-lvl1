@@ -3,9 +3,9 @@ import getRandomNumber from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
-const checkPrimeNumber = (num) => {
-  for (let i = 2; i < num; i += 1) {
-    if (num % i === 0) {
+const checkPrimeNumber = (number) => {
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
       return 'no';
     }
   }
