@@ -1,25 +1,19 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
-/* eslint-disable no-tabs */
 import run from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
 
-const getRandomOperator = () => {
-  const operators = ['+', '-', '*'];
-  return operators[Math.floor(Math.random() * operators.length)];
-};
-
-const calculateExpression = (n1, n2, operator) => {
+const calculate = (x, y, operator) => {
   switch (operator) {
     case '+':
-      return n1 + n2;
+      return x + y;
     case '-':
-      return n1 - n2;
+      return x - y;
     case '*':
-      return n1 * n2;
-	 default:
-      return undefined;
+      return x * y;
+    default:
+      throw new Error(`Unknown state calculate: '${calculate}'!`);
   }
 };
 
@@ -27,11 +21,11 @@ const runCalc = () => {
   const tasks = [];
   let i = 0;
   while (i !== 3) {
-    const n1 = getRandomNumber();
-    const n2 = getRandomNumber();
-    const operator = getRandomOperator();
-    const question = `${n1} ${operator} ${n2}`;
-    const rightAnswer = calculateExpression(n1, n2, operator);
+    const number1 = getRandomNumber();
+    const number2 = getRandomNumber();
+    const operator = operators[Math.floor(Math.random() * operators.length)];
+    const question = `${number1} ${operator} ${number2}`;
+    const rightAnswer = calculate(number1, number2, operator);
     tasks.push([question, rightAnswer.toString()]);
     i += 1;
   }
