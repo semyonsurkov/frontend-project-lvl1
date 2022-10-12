@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandomNumber } from '../utils.js';
+import { getRandomNumber, getRandomIndex } from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -18,7 +18,7 @@ const generateRound = () => {
   const stepValue = getRandomNumber(1, 5);
   const lengthValue = getRandomNumber(6, 10);
   const progression = getProgression(startValue, stepValue, lengthValue);
-  const indexOfHiddenElement = getRandomNumber(0, getProgression.length);
+  const indexOfHiddenElement = getRandomIndex(getProgression);
   const rightAnswer = progression[indexOfHiddenElement].toString();
   progression[indexOfHiddenElement] = '..';
   const question = progression.join(' ');
@@ -26,13 +26,7 @@ const generateRound = () => {
 };
 
 const runProgression = () => {
-  const tasks = [];
-  let i = 0;
-  while (i !== 3) {
-    tasks.push(generateRound());
-    i += 1;
-  }
-  run(tasks, description);
+  run(generateRound, description);
 };
 
 export default runProgression;
