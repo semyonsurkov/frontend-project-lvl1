@@ -19,13 +19,7 @@ const generateRound = () => {
 };
 
 const runGcd = () => {
-  const tasks = [];
-  let i = 0;
-  while (i !== 3) {
-    tasks.push(generateRound());
-    i += 1;
-  }
-  run(tasks, description);
+  run(generateRound, description);
 };
 
 export default runGcd;
