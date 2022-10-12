@@ -20,20 +20,14 @@ const calculate = (x, y, operator) => {
 const generateRound = () => {
   const number1 = getRandomNumber();
   const number2 = getRandomNumber();
-  const operator = getRandomIndex(operators);
+  const operator = operators[getRandomIndex(operators)];
   const question = `${number1} ${operator} ${number2}`;
   const rightAnswer = calculate(number1, number2, operator);
   return [question, rightAnswer.toString()];
 };
 
 const runCalc = () => {
-  const tasks = [];
-  let i = 0;
-  while (i !== 3) {
-    tasks.push(generateRound());
-    i += 1;
-  }
-  run(tasks, description);
+  run(generateRound, description);
 };
 
 export default runCalc;
