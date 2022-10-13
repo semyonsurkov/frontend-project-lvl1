@@ -19,7 +19,6 @@ Games:
 ## Set - up
 1. Go to the directory where you want to install the games, than execute in the console for сlone the project:
 ```
-```
 git clone https://github.com/semyonsurkov/frontend-project-lvl1.git
 ```
 2. Download the dependencies with the command:
