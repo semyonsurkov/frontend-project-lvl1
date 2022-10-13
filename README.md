@@ -14,14 +14,10 @@ Games:
    - Is it prime
 
 ## Requirements
-- [Node](https://nodejs.org/en/) not lower than ```18.8.0```
-- [NPM](https://www.npmjs.com/) not lower than ```8.18.0```
+- [Node](https://nodejs.org/en/) not lower than ```13.2.0```
    
 ## Set - up
 1. Go to the directory where you want to install the games, than execute in the console for сlone the project:
-```
-git init
-```
 ```
 git clone https://github.com/semyonsurkov/frontend-project-lvl1.git
 ```
