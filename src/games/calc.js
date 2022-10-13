@@ -3,6 +3,8 @@ import { getRandomNumber, getRandomIndex } from '../utils.js';
 
 const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
+const minRange = 1;
+const maxRange = 10;
 
 const calculate = (x, y, operator) => {
   switch (operator) {
@@ -18,8 +20,8 @@ const calculate = (x, y, operator) => {
 };
 
 const generateRound = () => {
-  const number1 = getRandomNumber(1, 10);
-  const number2 = getRandomNumber(1, 10);
+  const number1 = getRandomNumber(minRange, maxRange);
+  const number2 = getRandomNumber(minRange, maxRange);
   const operator = operators[getRandomIndex(operators)];
   const question = `${number1} ${operator} ${number2}`;
   const rightAnswer = calculate(number1, number2, operator).toString();
