@@ -18,12 +18,12 @@ const calculate = (x, y, operator) => {
 };
 
 const generateRound = () => {
-  const number1 = getRandomNumber();
-  const number2 = getRandomNumber();
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
   const operator = operators[getRandomIndex(operators)];
   const question = `${number1} ${operator} ${number2}`;
-  const rightAnswer = calculate(number1, number2, operator);
-  return [question, rightAnswer.toString()];
+  const rightAnswer = calculate(number1, number2, operator).toString();
+  return [question, rightAnswer];
 };
 
 const runCalc = () => {
