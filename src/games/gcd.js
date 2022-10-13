@@ -3,18 +3,13 @@ import { getRandomNumber } from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const calculateGcd = (x, y) => {
-  if (y === 0) {
-    return x;
-  }
-  return calculateGcd(y, x % y);
-};
+const gcd = (x, y) => ((y === 0) ? x : gcd(y, x % y));
 
 const generateRound = () => {
-  const number1 = getRandomNumber();
-  const number2 = getRandomNumber();
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
   const question = `${number1} ${number2}`;
-  const rightAnswer = calculateGcd(number1, number2);
+  const rightAnswer = gcd(number1, number2);
   return [question, rightAnswer.toString()];
 };
 
