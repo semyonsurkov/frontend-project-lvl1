@@ -6,10 +6,11 @@ const minRange = 2;
 const maxRange = 10;
 
 const isPrime = (number) => {
+	const checkLimit = Math.sqrt(number);
   if (number < 2) {
     return false;
   }
-  for (let i = 2; i <= Math.sqrt(number); i += 1) {
+  for (let i = 2; i <= checkLimit; i += 1) {
     if (number % i === 0) {
       return false;
     }
@@ -18,7 +19,7 @@ const isPrime = (number) => {
 };
 
 const generateRound = () => {
-  const question = getRandomNumber(minRange, maxRange);
+  const question = getRandomNumber(minRange, maxRange).toString();
   const rightAnswer = isPrime(question) === true ? 'yes' : 'no';
   return [question, rightAnswer];
 };
