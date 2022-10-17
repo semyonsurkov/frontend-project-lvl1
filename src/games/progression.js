@@ -12,8 +12,7 @@ const maxLength = 10;
 const getProgression = (start, step, length) => {
   const progression = [];
   for (let i = 1; i < length; i += 1) {
-    progression.push(start);
-    start += step;
+    progression.push(start + (step * i));
   }
   return progression;
 };
