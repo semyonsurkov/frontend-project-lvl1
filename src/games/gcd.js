@@ -10,9 +10,9 @@ const gcd = (x, y) => ((y === 0) ? x : gcd(y, x % y));
 const generateRound = () => {
   const number1 = getRandomNumber(minRange, maxRange);
   const number2 = getRandomNumber(minRange, maxRange);
-  const question = `${number1} ${number2}`;
-  const rightAnswer = gcd(number1, number2);
-  return [question, rightAnswer.toString()];
+  const question = `${number1} ${number2}`.toString();
+  const rightAnswer = gcd(number1, number2).toString();
+  return [question, rightAnswer];
 };
 
 const runGcd = () => {
