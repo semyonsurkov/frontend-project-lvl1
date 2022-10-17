@@ -10,13 +10,12 @@ const minLength = 6;
 const maxLength = 10;
 
 const getProgression = (start, step, length) => {
-  const progressionItems = [];
-  let element = start;
+  const progression = [];
   for (let i = 1; i < length; i += 1) {
-    progressionItems.push(element);
-    element += step;
+    progression.push(start);
+    start += step;
   }
-  return progressionItems;
+  return progression;
 };
 
 const generateRound = () => {
