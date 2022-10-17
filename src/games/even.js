@@ -5,11 +5,12 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const minRange = 1;
 const maxRange = 10;
 
-const isEven = (number) => (number % 2 === 0 ? 'yes' : 'no');
+const isEven = (number) => number % 2 === 0;
 
 const generateRound = () => {
-  const question = getRandomNumber(minRange, maxRange).toString();
-  const rightAnswer = isEven(question);
+  const number = getRandomNumber(minRange, maxRange)
+  const rightAnswer = isEven(number) ? 'yes' : 'no';
+	const question = number.toString();
   return [question, rightAnswer];
 };
 
